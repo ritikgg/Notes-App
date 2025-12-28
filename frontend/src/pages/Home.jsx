@@ -448,7 +448,7 @@ function Home() {
                   message={
                     searchQuery
                       ? "Oops! No notes found matching your search."
-                      : "Start your journey! Click the 'Add' box above to create your first note."
+                      : "Start your journey! Click the box above to create your first note."
                   }
                 />
               )}
