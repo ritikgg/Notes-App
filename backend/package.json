@@ -2,6 +2,10 @@
   "name": "backend",
   "module": "index.ts",
   "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "bun run server.js"
+  },
   "private": true,
   "devDependencies": {
     "@types/bun": "latest"
