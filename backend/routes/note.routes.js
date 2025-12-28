@@ -9,7 +9,7 @@ import {
     toggleArchive
 } from "../controllers/note.controller.js";
 import protect from "../middleware/authMiddleware.js";
-import { isPropertySignature } from "typescript";
+
 
 const router = express.Router();
 
