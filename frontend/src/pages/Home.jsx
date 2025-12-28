@@ -29,7 +29,7 @@ function Home() {
 
       const fetchNotes = async () => {
         try {
-          const response = await fetch("https://notes-app-backend-ydhk.onrender.com//api/notes", {
+          const response = await fetch("https://notes-app-backend-ydhk.onrender.com/api/notes", {
             headers: { Authorization: `Bearer ${userData.token}` },
           });
 
@@ -65,7 +65,7 @@ function Home() {
     if (!title && !content) return;
 
     try {
-      const res = await fetch("https://notes-app-backend-ydhk.onrender.com//api/notes", {
+      const res = await fetch("https://notes-app-backend-ydhk.onrender.com/api/notes", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -86,7 +86,7 @@ function Home() {
   // 4. DELETE SINGLE NOTE (Soft Delete)
   const deleteNote = async (id) => {
     try {
-      const response = await fetch(`https://notes-app-backend-ydhk.onrender.com//api/notes/${id}`, {
+      const response = await fetch(`https://notes-app-backend-ydhk.onrender.com/api/notes/${id}`, {
         method: "DELETE",
         headers: { Authorization: `Bearer ${user.token}` },
       });
@@ -114,7 +114,7 @@ function Home() {
     setNotes(updatedNotes);
 
     try {
-      await fetch(`https://notes-app-backend-ydhk.onrender.com//api/notes/${id}`, {
+      await fetch(`https://notes-app-backend-ydhk.onrender.com/api/notes/${id}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
@@ -137,7 +137,7 @@ function Home() {
     );
     setNotes(updatedNotes);
     try {
-      await fetch(`https://notes-app-backend-ydhk.onrender.com//api/notes/${id}`, {
+      await fetch(`https://notes-app-backend-ydhk.onrender.com/api/notes/${id}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
@@ -153,7 +153,7 @@ function Home() {
   // 7. RESTORE NOTE (From Trash)
   const restoreNote = async (id) => {
     try {
-      const response = await fetch(`https://notes-app-backend-ydhk.onrender.com//api/notes/update-trash/${id}`, {
+      const response = await fetch(`https://notes-app-backend-ydhk.onrender.com/api/notes/update-trash/${id}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
@@ -179,7 +179,7 @@ function Home() {
 
     try {
       const response = await fetch(
-        `https://notes-app-backend-ydhk.onrender.com//api/notes/delete-permanent/${id}`,
+        `https://notes-app-backend-ydhk.onrender.com/api/notes/delete-permanent/${id}`,
         {
           method: "DELETE",
           headers: {
@@ -206,7 +206,7 @@ function Home() {
   const archiveNote = async (id) => {
     try {
       const response = await fetch(
-        `https://notes-app-backend-ydhk.onrender.com//api/notes/archive/${id}`,
+        `https://notes-app-backend-ydhk.onrender.com/api/notes/archive/${id}`,
         {
           method: "PUT",
           headers: { Authorization: `Bearer ${user.token}` },

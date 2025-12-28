@@ -17,7 +17,7 @@ const ProfileModal = ({ user, onClose, onUpdate }) => {
         try {
             const token = user.token;
 
-            const response = await fetch("https://notes-app-backend-ydhk.onrender.com//api/users/profile", {
+            const response = await fetch("https://notes-app-backend-ydhk.onrender.com/api/users/profile", {
                 method: "PUT",
                 headers: {
                     "Content-Type": "application/json",
