@@ -2,8 +2,8 @@
 
 > A full-stack, feature-rich note-taking application inspired by Google Keep. Built to demonstrate advanced CRUD operations, authentication, and state management.
 
-🔴 **Live Demo:** notes-app-eta-bay.vercel.app
-⚙️ **Backend API:** notes-app-backend-ydhk.onrender.com
+🔴 **Live Demo:** https://notes-app-eta-bay.vercel.app/
+⚙️ **Backend API:** https://notes-app-backend-ydhk.onrender.com/
 
 <img width="1579" height="767" alt="image" src="https://github.com/user-attachments/assets/04a2cfa5-f0c5-447f-ac69-cc64924ad464" />
 
