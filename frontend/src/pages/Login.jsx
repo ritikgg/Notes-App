@@ -46,6 +46,7 @@ function Login() {
     <div className="flex justify-center items-center h-screen bg-gray-100">
       <form onSubmit={handleLogin} className="bg-white p-6 rounded shadow-md w-80">
         <h1 className="text-2xl font-bold mb-4 text-center">Login</h1>
+        <h1>demo@mail.com 123</h1>
         
         {/* Error Message Alert */}
         {error && <div className="bg-red-100 text-red-700 p-2 mb-3 text-sm rounded">{error}</div>}
